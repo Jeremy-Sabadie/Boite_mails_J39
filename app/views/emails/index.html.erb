@@ -2,6 +2,7 @@
    <p id="notice"><%= notice %></p>
 </div>
 
+
 <div>
     <div id="titre">
     <h1>Boite mails</h1>
@@ -22,17 +23,20 @@
                   <% @emails.each do |email| %>
                     <tr>
                       <td><%= email.object %></td>
-                      <td><%= email.read %></td>
+                      <td class="lu-<%= email.id %>"><% email.read %>
+                          <% if email.read %>
+                                   <p class = "yes"> Lu  </p>
+                                <% else %>
+                                  <p> Non lu   </p>
+                                <%end%>
+                      </td>
                       <td><%= email.created_at.strftime("%m/%d/%Y") %></td>
                       <td><%= link_to 'Voir', email, remote: true  %></td>        
                     </tr>
                   <% end %>
-                </tbody>
-                
+                </tbody>                
               </table>
-
-              <br>
-              
+              <br>              
         </section>
 
         <section id="right">
@@ -40,6 +44,6 @@
         </section>
     </div>
     <div id="nouv">
-        <input type="button" name="Nouveau Mail" value="Nouveau Mail" onclick="self.location.href='emails/new'"
+        <input type="button" name="Nouveau Mail" value="Nouveau Mail" onclick="self.location.href='emails/new'">
     </div>
 </div>
