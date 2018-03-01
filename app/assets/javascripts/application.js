@@ -14,5 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-alert("                             Bonjour à toi correcteur!\r\n             Si tu fais abstraction du design assez dégueu,\r\n tu trouveras ici tous ce qui était demandé pour cet exercice.", 'center')
+alert("                             Bonjour à toi correcteur!\r\n             Si tu fais abstraction du design assez dégueu,\r\n tu trouveras ici tout ce qui était demandé pour cet exercice.", 'center')
 
