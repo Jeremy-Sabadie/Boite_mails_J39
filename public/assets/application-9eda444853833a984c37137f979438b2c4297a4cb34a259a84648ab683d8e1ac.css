@@ -10,12 +10,9 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
-
- @import "bootstrap";
-
 
 html{
 	background-image: url(http://iwallpapers2.free.fr/images/Paysages/Hiver/Magnifique_fond_ecran_HD_-_Hiver.jpg);
@@ -26,32 +23,19 @@ html{
 }
 
 body{
-	display: flex;
-	justify-content: center;
 }
 
 #left{
 	background-color: white;
-	width: 350px;
+	width: 500px;
 	height: 500px;
-	border-radius: 0px 0px 0px 20px;
-	border-style: solid;
-	border-color: grey;
-	border-width: 2px;
-	overflow: scroll;
+	border-radius: 0px 0px 20px 20px;
 }
 
 #right{
-	background-color: white;
+	background-color: red;
 	width: 500px;
 	height: 500px;
-	border-radius: 0px 0px 20px 0px;
-	border-style: solid;
-	border-color: grey;
-	border-width: 2px;
-	display: flex;
-	justify-content: flex-start;
-	overflow: scroll;
 }
 
 table{
@@ -77,30 +61,17 @@ table{
 
 
 #nouv{
-	margin-top: 80%;
-	
+	margin-top: 40%;
 
 }
 
 tr{
 	line-height: 3.5em;
-	border-style: solid;
-	border-width: 5px;
-	border-color: black;
 	
 }
 
 td{
-
+	border-style: solid;
+	border-width: 5px;
+	border-color: black;
 }
-
-#dede{
-	display: flex;
-	justify-content: center;
-}
-
-#crud{
-	text-decoration: none;
-	margin: auto;
-}
-
